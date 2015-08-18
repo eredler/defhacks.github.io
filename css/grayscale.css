@@ -371,3 +371,27 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+
+.sponsor-box-container {
+    display: table;
+    background: gray;
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;   
+}
+
+.graybox-center {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Roboto;
+}
