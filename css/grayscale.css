@@ -394,3 +394,10 @@ body {
     font-size: 13px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.sign-up {
+    font-family:Montserrat,"Helvetical Neue", Helvetica, Arial, sans-serif;
+    font-size=30px; 
+    text-transform=uppercase; 
+    text-align:center;
+}
