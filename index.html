@@ -53,7 +53,8 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="www.defhacks.xyz">
-                    <img src="defhacks-logos/defhacks-logo-white-green-small.png" width="75" height="50" alt="" style="margin-left:25px; margin-bottom:-50px;" />
+                    <i><img src="defhacks-logos/defhacks-logo-white-green-small.png" width="45" height="30" alt=""/></i>  
+					<span class="light">def</span> Hacks()
                 </a>
             </div>
 
@@ -95,7 +96,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <img src="defhacks-logos/defhacks-wordmark-logo-white-green.png" width="855" height="158" alt="" style="margin-top:100px;"/>
+                        <!-- need to give logo dynamiac sizing -->
+						<img src="defhacks-logos/defhacks-wordmark-logo-white-green.png" width="855" height="158" alt="" style="margin-top:100px;"/>
                         <h3 class="intro-text">A high school hackathon by students, for students.</h3>
                         <a href="https://twitter.com/def_hacks">
 							<span class="fa-stack fa-lg">
@@ -125,6 +127,7 @@
 						<a href="#what" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
+						<br>
 						<p>Wear your hard hats because we're under construction :) Pardon our appearance!</p>
                     </div>
                 </div>
@@ -182,7 +185,43 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
 					<h1 class="title">Press</h1>
-					<!-- put in slideshow -->
+					<!--
+					<div id="slideshow">
+						<style>
+							#slideshow {
+								background-color: #000000;
+								text-align: center;
+							}
+							#slideshow > div { 
+								position: absolute; 
+								top: 0px; 
+								left: 0px; 
+								right: 0px; 
+								bottom: 0px; 
+							}
+						</style>
+						<script>
+							$("#slideshow > div:gt(0)").hide();
+							setInterval(function() { 
+								$('#slideshow > div:first')
+									.fadeOut(1000)
+									.next()
+									.fadeIn(1000)
+									.end()
+									.appendTo('#slideshow');
+							},  3000);
+						</script>
+						<div>
+							<img src="http://paulmarique.be/dropbox/img/01.jpg">
+						</div>
+						<div>
+							<img src="http://paulmarique.be/dropbox/img/02.jpg">
+						</div>
+						<div id="sampletext"> 
+							WORKING WITH</br>TEXT TOO.
+						</div>
+						-->
+					</div>
 				</div>
             </div>
         </div>
@@ -359,6 +398,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+	
+	<!-- Slideshow JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
 </body>
 
