@@ -137,7 +137,6 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
 }
@@ -428,9 +427,9 @@ ul.team-list {
 
 ul.team-list li {
 	display: inline-block;
-	margin: 0 1em 1em 0;
+	margin: 0 1em 1em 1%;
 	position: relative;
-		width: 300px;
+	width: 300px;
 	height: 300px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
@@ -477,73 +476,27 @@ span.text-content span {
 ul.team-list li:hover span.text-content {
   opacity: 1;
 }
-	
-.circularRichard {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background: url("../judges/richard.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	}
 
-.circularKai {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background: url("../judges/kai.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	}
+.cd-top {
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background:#fff;
+}
 
-.circularNisha {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background: url("../judges/nisha.png") no-repeat;
-    background-position: center;
-    background-size: 600px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	}
-
-.circularQuestion {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background: url("../judges/questionmark.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	}
-
-.circularPeter {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	background: url("../judges/peter.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}

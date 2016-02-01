@@ -24,6 +24,23 @@ $(function() {
     });
 });
 
+var amountScrolled = 2500;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.cd-top').fadeIn('slow');
+	} else {
+		$('a.cd-top').fadeOut('slow');
+	}
+});
+
+$('a.cd-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
