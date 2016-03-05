@@ -414,6 +414,16 @@ body {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 	
+.sponsor-circular {
+	width: auto;
+	height: auto;
+    background-position: center;
+    background-size: contain;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}	
+	
 ul.team-list {
 	list-style-type: none;
 	margin: 0;
@@ -469,7 +479,7 @@ span.text-content span {
   vertical-align: middle;
 }
 
-ul.team-list li:hover span.text-content {
+ul.team-list li:hover span.text-content{
   opacity: 1;
 }
 
