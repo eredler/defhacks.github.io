@@ -1,0 +1,2644 @@
+<style>
+/*!
+ * Adapted from Sprit8 HTML http://themeforces.com/item/free-spirit8-html/
+ * Coded by Jenn Pereira and Designed by Robert Berki
+ * Modified by Danielle Okezie
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #5a5a5a;
+}
+
+h1 strong{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 900;
+    color: #FFF;
+}
+h2{
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 20px;
+}
+
+h2 strong {
+    font-weight: 700;
+}
+
+h3{
+    font-weight: 900;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+p.intro{
+    font-size: 16px;
+    margin: 12px 0 0;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+a{ color: #F2A0A0;}
+a:hover,
+a:focus{
+    text-decoration: none;
+    color: #F2A0A0;
+}
+
+.section-title hr{
+    border-color: #fcac45;
+    border-width: 4px;
+    width: 60px;
+    float: left;
+    clear: both;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+ul, ol{
+    padding: 0;
+    webkit-padding: 0;
+    moz-padding: 0;
+}
+/* Navigation */
+#tf-menu {
+    padding: 20px;
+    transition: all 0.8s;
+}
+#tf-menu.navbar-default {
+    background-color: rgba(248, 248, 248, 0);
+    border-color: rgba(231, 231, 231, 0);
+}
+#tf-menu a.navbar-brand {
+text-transform: uppercase;
+font-size: 22px;
+color: #fff;
+font-weight: 900;
+}
+
+#tf-menu.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#tf-menu.navbar-default .navbar-nav > li > a:hover {
+    text-transform: uppercase;
+    color: #F2A0A0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.on {
+    background-color: #222222 !important;
+    padding: 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #F2A0A0 !important;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.navbar-toggle {
+    border-radius: 0;
+    }
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+    background-color: #F2A0A0;
+    border-color: #F2A0A0;
+}
+
+.navbar-default .navbar-toggle:hover>.icon-bar {
+    background-color: #FFF;
+}
+
+/*-------------- Home Section --------------*/
+#home{
+    background: url(../img/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 800px;
+    color: #cfcfcf;
+}
+
+#home p.lead{
+    color: #e3e3e3;
+}
+
+.content{
+    position: relative;
+    padding: 20% 0 0;
+}
+
+.color{
+    color: #fcac45;
+}
+
+a.dark {
+    font-weight: 900;
+    color: #a45050;
+}
+
+a.bold {
+    font-weight: 900;
+}
+
+a.fa.fa-angle-down {
+    padding: 15px 20px;
+    color: #fff;
+    border: 2px solid #b4b4b4;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-top: 50px;
+    transition: all 0.5s;
+}
+a.fa.fa-angle-down:hover{
+    background: #F2A0A0;
+    color: #ffffff;
+    border: 2px solid #F2A0A0;
+
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #eda09a;
+    color: #eda09a;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #eda09a;
+    outline: 0;
+    color: #000;
+    background-color: #eda09a;
+}
+
+
+/*-------------- About Section --------------*/
+
+ul.about-list{ margin: 30px 0 0 ;}
+ul.about-list li{
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+ul.about-list li span{ 
+    margin-right: 10px;
+}
+
+.space{
+    margin-top: 50px;
+}
+
+#about i.fa {
+    font-size: 40px;
+    border: 4px solid #F2A0A0;
+    width: 100px;
+    height: 100px;
+    padding: 27px 25px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#about i.fa.fa-mobile{
+    font-size: 50px;
+    padding: 20px 25px;
+}
+
+#about .service:hover>i.fa{
+    background: #F2A0A0;
+    color: #ffffff;
+}
+
+/* --------------  Sponsors Section  -------------- */
+#sponsors{
+    background: url(../img/faq.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+#sponsors ul li img:hover {
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+         -o-transform: scale(1.2);
+}
+
+#sponsors ul li img {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+@media only screen and (max-width:400px) {
+    #sponsors {
+        background: #1a1a1a;
+    }
+}
+
+.silsponsor {
+    height: 50px;
+}
+
+.asana {
+    height: 50px;
+}
+
+.airbnb_sponsor {
+    height: 45px;
+}
+
+.capital, .amazon-robotics {
+    height: 100px;
+}
+
+.platsponsor {
+    height: 140px;
+}
+
+.desco {
+    height: 70px;
+}
+
+.goldsponsor {
+    height: 80px;
+}
+
+.bigsize {
+    height: 75px;
+}
+
+.roughdraft {
+    height: 100px;
+}
+
+.startup {
+    height: 35px;
+}
+
+.cliqbit {
+    height: 100px;
+}
+
+.bloomberg {
+    height: 35px;
+}
+/*-------------- Schedule Section --------------*/
+
+#schedule{
+    position:relative;
+    padding-bottom: 50px;
+    background:#ffffff;
+}
+
+.download-btn{
+    position:relative;
+    display:inline-block;
+    line-height:24px;
+    padding:10px 25px 8px;
+    margin-bottom:20px;
+    border:2px solid #a0a0a0;
+    color:#a6a6a6;
+    font-size:14px;
+    font-family:'Montserrat',sans-serif;
+    text-transform:uppercase;
+}
+
+.download-btn .fa{
+    padding-right:20px;
+    font-size:20px;
+}
+
+.download-btn:hover{
+    color:#ffffff;
+    background:#fc5a1b;
+    border-color:#fc5a1b;
+}
+
+.schedule-box{
+    position:relative;
+    border:1px solid #F2A0A0;   
+}
+
+.schedule-box .tab-buttons{
+    position:relative;
+    width:100%;
+    display:table;
+}
+
+.schedule-box .tab-buttons .tab-btn{
+    position:relative;
+    display:table-cell;
+    text-align:center;
+    background:#ffffff;
+    color:#000;
+    line-height:1.4em;
+    padding:10px 10px;
+    border-bottom:1px solid #F2A0A0;
+    border-right:1px solid #F2A0A0;
+    font-family:'Lato',sans-serif;
+    cursor:pointer;
+    transition:all 300ms ease;
+    -webkit-transition:all 300ms ease;
+    -ms-transition:all 300ms ease;
+    -o-transition:all 300ms ease;
+    -moz-transition:all 300ms ease; 
+} 
+
+.style-two .schedule-box .tab-buttons .tab-btn{
+    display:block;
+}
+
+.schedule-box .tab-buttons .tab-btn:last-child{
+    border-right:none;  
+}
+
+.style-two .schedule-box .tab-buttons .tab-btn:last-child{
+    border-bottom:none;
+    border-right:1px solid #F2A0A0;
+}
+
+.schedule-box .tab-buttons .tab-btn.active,
+.schedule-box .tab-buttons .tab-btn:hover{
+    border-color: #F2A0A0;
+    background:#F2A0A0;
+    color:#ffffff;
+}
+
+.style-two .schedule-box .tab-buttons .tab-btn.active,
+.style-two .schedule-box .tab-buttons .tab-btn:hover{
+    border-bottom-color:#ffffff;
+}
+
+.schedule-box .tab-buttons .tab-btn .day{
+    display:block;
+    text-transform:capitalize;
+    font-size:22px;
+    margin-bottom:7px;
+}
+
+.schedule-box .tab-buttons .tab-btn .date{
+    display:block;
+    font-size:15px; 
+}
+
+.schedule-box .tab-buttons .tab-btn .curve{
+    position:absolute;
+    display:block;
+    width:100%;
+    left:0px;
+    bottom:0px;
+    background:none;
+    text-align:center;
+    opacity:0;
+}
+
+.style-two .schedule-box .tab-buttons .tab-btn .curve{
+    width:20px;
+    height:100%;
+    bottom:auto;
+    left:auto;
+    right:0px;
+    top:0px;
+}
+
+.schedule-box .tab-buttons .tab-btn.active .curve,
+.schedule-box .tab-buttons .tab-btn:hover .curve{
+    bottom:-19px;
+    opacity:1;
+    transition:all 300ms ease 200ms;
+    -webkit-transition:all 300ms ease 200ms;
+    -ms-transition:all 300ms ease 200ms;
+    -o-transition:all 300ms ease 200ms;
+    -moz-transition:all 300ms ease 200ms;   
+}
+
+.style-two .schedule-box .tab-buttons .tab-btn.active .curve,
+.style-two .schedule-box .tab-buttons .tab-btn:hover .curve{
+    bottom:auto;
+    right:-17px;
+}
+
+.schedule-box .tab-buttons .tab-btn .curve:after{
+    content:'';
+    display:inline-block;
+    width:0px;
+    height:0px;
+    border:7px solid transparent;
+    border-top-color:#F2A0A0;   
+}
+
+.style-two .schedule-box .tab-buttons .tab-btn .curve:after{
+    content:'';
+    position:absolute;
+    right:3px;
+    top:42px;
+    display:inline-block;
+    width:0px;
+    height:0px;
+    border:7px solid transparent;
+    border-left-color:#fc5a1b;  
+}
+
+.schedule-box .tabs-box{
+    position:relative;
+}
+
+.style-two .schedule-box .tabs-box{
+    float:left;
+    width:82%;  
+}
+
+.schedule-box .tab{
+    position:relative;
+    padding:40px 20px;
+    display:none;   
+}
+
+.style-two .schedule-box .tab{
+    padding-bottom:10px;    
+}
+
+.schedule-box .tab.current{
+    display:block;  
+}
+
+.schedule-box .hour-box{
+    position:relative;
+    padding-left:150px;
+    font-size:16px;
+    color:#7f7f7f;
+    overflow:hidden;
+}
+
+.schedule-box .hour-box:before{
+    content:'';
+    position:absolute;
+    left:111px;
+    top:24px;
+    width:2px;
+    height:100%;
+    background:#d2d2d2;
+}
+
+
+.schedule-box .hour-box.active-box:before{
+    background:#fc5a1b;
+}
+
+.schedule-box .hour-box:last-child:before{
+    display:none;
+}
+
+.schedule-box .hour-box .hour{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    line-height:2em;
+    color:#7f7f7f;  
+}
+
+.schedule-box .hour-box .circle{
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:24px;
+    height:24px;
+    border:2px solid #F2A0A0;
+}
+
+.schedule-box .hour-box.active-box .circle{
+    border-color:#fc5a1b;
+}
+
+.schedule-box .hour-box .toggle-btn{
+    position:relative;
+    top:-4px;
+    margin-bottom:5px;
+    cursor:pointer;
+}
+
+.schedule-box .hour-box .toggle-btn h3{
+    position:relative;
+    display:inline-block;
+    font-size:18px;
+    padding-right:30px;
+    color:#292929;
+}
+
+.schedule-box .hour-box .toggle-btn h3:after{
+    font-family: 'FontAwesome';
+    content:'\f107';
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:30px;
+    height:30px;
+    display:block;
+    color:#E85D59;
+    line-height:28px;
+    font-size:24px;
+    text-align:right;
+    z-index:5;  
+}
+
+.schedule-box .hour-box .toggle-btn.active h3:after{
+    content:'\f106';    
+}
+
+.schedule-box .hour-box .content-box{
+    position:relative;
+    padding-right:20px;
+    display:none;   
+}
+
+.schedule-box .hour-box .content-box.collapsed{
+    display:block;  
+}
+
+.schedule-box .hour-box .content-box .professional{
+    position:relative;  
+}
+
+.schedule-box .hour-box .content-box ul{
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.schedule-box .hour-box .professional .info{
+    position:relative;
+    padding-left:110px;
+    padding-top:10px;
+    min-height:50px;
+    margin-bottom:20px;
+}
+
+.schedule-box .hour-box .professional .info .image{
+    position:absolute;
+    left:15px;
+    top:0px;
+    width:72px;
+    height:72px;
+    border:1px solid #d0d0d0;
+    overflow:hidden;
+}
+
+.schedule-box .hour-box .professional .info .image img{
+    display:block;
+    width:100%; 
+}
+
+.schedule-box .hour-box .professional .info .prof-title{
+    font-size:18px;
+    margin-bottom:7px;
+    color:#292929;
+    font-weight:500;
+}
+
+.schedule-box .hour-box .professional .info .prof-occup{
+    font-size:15px;
+    color:#fc5a1b;
+}
+
+.schedule-box .hour-box .theme-btn{
+    background: #E85D59;
+    color: white;
+    margin:15px 15px 15px;
+    padding: 5px;
+}
+
+.schedule-box .hour-box .theme-btn:before{
+    background:#292929; 
+}
+
+/*-------------- Programming Section --------------*/
+
+#programming {
+    background: url(../img/involve.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#programming h3 {
+    color: #F2A0A0;
+    text-align: center;
+}
+
+#programming p {
+    text-align: left;
+    font-weight: 600;
+}
+
+#programming ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+#programming i.fa {
+    font-size: 25px;
+    display:inline-block;
+}
+
+#programming h4  {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: none;
+    color: white;
+}
+
+#programming h5  {
+    color: #E85D59;
+}
+
+#programming h4 span {
+    display: block;
+    position: relative;
+    left: -40px;
+    top: 10px;
+    font-size: 20px;
+    background: none;
+    padding: 5px;
+    color: white;
+}
+
+
+#programming .col-md-3 img {
+    width: 198px;
+    height: 198px;
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 50%; 
+    border: 10px solid #E85D59; 
+    box-shadow: 2px 2px 0px rgba(192,192,192,0.3);
+    transition: all 0.1s ease-in;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+    
+#programming .col-md-3 img:hover {
+    border: 10px solid #E85D59;
+    position: relative;
+    z-index: 10;
+    transition: all 0.1s ease-in;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);  
+}
+
+#programming span {
+    padding: 8px 20px;
+    position: relative;
+    top: -64px;
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+#programming .description .about, .light-text {
+  font-size: 14px;
+  color: black !important;
+}
+
+#programming .description .light-text {
+    font-weight: 600;
+}
+/* Member Image Hover Effect */
+.hover_img {
+  display: none
+}
+
+.keynote-profile:hover .unhover_img{
+  display: none;
+}
+
+.keynote-profile:hover .hover_img {
+  display: block;
+}
+
+/*-------------- Registration --------------*/
+#registration {
+
+}
+
+@media only screen and (max-width:400px) {
+    #registration {
+        background: #1a1a1a;
+    }
+}
+
+
+/*-------------- FAQ Section --------------*/
+
+#faq {
+    background: url(../img/speaker_bw_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#faq .overlay {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+    height: auto;
+    background-attachment: fixed;
+}
+
+#faq i.fa {
+    font-size: 40px;
+    border: 4px solid #F2A0A0;
+    width: 100px;
+    height: 100px;
+    padding: 27px 25px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#faq i.fa.fa-mobile{
+    font-size: 50px;
+    padding: 20px 25px;
+}
+
+#faq #questions {
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    max-width: 900px;
+    margin: 20px auto 20px;
+}
+
+#faq #questions li {
+    width: calc(33% - 60px);
+    margin: 30px;
+    list-style: none;
+    margin-bottom: 5px;
+    font-weight: 900;
+    color: #fff;
+}
+
+#faq #questions li span {
+    font-weight: bold;
+    display: block;
+    font-size: 14pt;
+    color: #F2A0A0;
+}
+
+@media screen and (max-width: 600px) {
+    #faq #questions li {
+        width: calc(100% - 20px);
+    }
+}
+
+/*--------------  Section Title -------------- */
+
+.section-title.center{
+    padding: 30px 0;
+}
+.section-title h2,
+.section-title.center h2{
+    font-weight: 300;
+}
+.section-title.center .line{
+    border-top: 4px solid #F2A0A0;
+    height: 10px;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.section-title.center hr {
+    border-top: 4px solid rgba(252, 172, 69, 0.34);
+    width: 40px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    left: 17%;
+}
+#team .item{
+    padding: 0;
+    margin: 15px;
+    color: #FFF;
+    text-align: center;
+}
+
+img.img-circle.team-img {
+    width: 120px;
+    height: 120px;
+    border: 4px solid transparent;
+    transition: all 0.5s;
+}
+
+/*--------------  Footer -------------- */
+nav#footer{
+    background: #222222;
+    color: #ffffff;
+    padding: 20px 0 15px 0;
+}
+nav#footer .fnav{ vertical-align: middle;}
+ul.footer-social li{
+    display: inline-block;
+    margin-right: 10px;
+}
+nav#footer p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+#footer i.fa {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #8c8c8c;
+    font-size: 20px;
+    padding: 4px 5px;
+    border-radius: 50%;
+    color: #8c8c8c;
+    transition: all 0.5s;
+}
+#footer i.fa:hover{
+    background: #FCAC45;
+    border-color: #FCAC45;
+    color: #ffffff;
+}
+
+/*-------------- Team Section -------------- */
+#team {
+    padding: 60px 0;
+    background: #262626;
+    text-align: center;
+}
+
+.modal-header { border-width: 0 !important; }
+
+#team h4  {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: none;
+    color: white;
+}
+
+#team h4 span {
+    display: block;
+    position: relative;
+    left: -40px;
+    top: 10px;
+    font-size: 20px;
+    background: none;
+    padding: 5px;
+    color: white;
+}
+
+#team .col-md-3 img {
+    width: 198px;
+    height: 198px;
+    max-width: 240px;
+    max-height: 240px;
+    border: 15px solid transparent; 
+    box-shadow: 2px 2px 0px rgba(192,192,192,0.3);
+    transition: all 0.1s ease-in;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+    
+#team .col-md-3 img:hover {
+    border: 15px solid #1a1a1a;
+    position: relative;
+    z-index: 10;
+    transition: all 0.1s ease-in;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);  
+}
+
+#team span {
+    padding: 8px 20px;
+    position: relative;
+    top: -64px;
+    display: inline-block;
+    background: #4593e3;
+    font-size: 16px;
+}
+
+/* Member Image Hover Effect */
+.hover_img {
+  display: none
+}
+
+.member-profile:hover .unhover_img{
+  display: none;
+}
+
+.member-profile:hover .hover_img {
+  display: block;
+}
+
+
+/* Rows Optimization */
+
+.row1 .col-md-3, .row2 .col-md-3 {
+    padding-bottom: 40px;
+}
+
+#team .description {
+  padding: 40px 0;
+  color: black;
+}
+
+#team .description .about {
+  font-size: 14px;
+  color: black !important;
+}
+
+.clear {clear: both;}
+</style>
+
+<!-- Schedule -->
+    <div id = "schedule">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2><b>Schedule</b></h2>
+                <div class="line">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="schedule-box clearfix">
+                <!--Tab Buttons-->
+                <ul class="tab-buttons clearfix">
+                    <li class="tab-btn active" data-id="#friday"><span class="day">Friday</span><span class="date">Feb 26</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#saturday"><span class="day">Saturday</span><span class="date">Feb 27</span><span class="curve"></span></li>
+                    <li class="tab-btn" data-id="#sunday"><span class="day">Sunday</span><span class="date">Feb 28</span><span class="curve"></span></li>
+                </ul>
+
+                <!--Tabs Box-->
+                <div class="tabs-box">
+
+                    <!-- Friday -->
+                    <div class="tab current" id="friday">
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Early Registration</h3>
+                           </div>
+                            <div class="content-box">
+                               <p>Please have your ticket ready!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 10:00pm</a>
+                                        <a href="#" class="theme-btn">Adams LCR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                                <h3>Mixer & Ambassador Event</h3>
+                            </div>
+                            <div class="content-box">
+                               <p>Come have fun with other WECoders and join us at our mixer! This will take place Adams LCR</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 10:00pm</a>
+                                        <a href="#" class="theme-btn">Adams LCR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Friday -->
+
+                    <!-- Saturday -->
+                    <div class="tab" id="saturday">
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Registration</h3>
+                           </div>
+                            <div class="content-box">
+                               <p>Come prepared with your ticket!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 9:00 am</a>
+                                        <a href="#" class="theme-btn">Northwest Lobby</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Breakfast</h3>
+                           </div>
+                            <div class="content-box">
+                               <p>Enjoy some yummy breakfast from Panera Bread!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 9:00 am</a>
+                                        <a href="#" class="theme-btn">Northwest Cafe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Speaker Lounge</h3>
+                           </div>
+                            <div class="content-box">
+                               <p>Speakers and panelists hangout space.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B110</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Board Lounge</h3>
+                           </div>
+                            <div class="content-box">
+                               <p>WECode Board's hangout space.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B107</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lounge - Amazon Robotics</h3>
+                           </div>
+                            <div class="content-box">
+                               <p>Join Amazon Robotics in an Open-House style Lounge for ongoing activities including:</p>
+                               <ul>
+                                   <li>Fun table-top brain games with friends and colleagues</li>
+                                   <li>Talk to Amazon Robotics software engineers for personalized Q&A and career advice</li>
+                                   <li>Delicious treats from Sweet Cupcakes bakery to please your afternoon sweet tooth</li>
+                                   <li>Hear all about what it’s like to work at Amazon Robotics and great career opportunities available there</li>
+                               </ul>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B105</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lounge - Goldman Sachs</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>8:00am – 5:00pm – Ongoing Lounge Events</p>
+                                <ul>
+                                    <li>Ask our Engineers</li>
+                                    <li>We Build... with Blocks!</li>
+                                    <li>Add to our Post-It Mural</li>
+                                    <li>Networking Scavenger Hunt</li>
+                                    <li>Snacks</li>
+                                </ul>
+                                <p>9:00am - 12:00pm - Resume Review</p>
+                                <p>3:30pm – 4:30pm – Ask Jianran Li (Jenny) (Q&A session following Lightning Talk)</p>
+                                <p>3:30pm – Deadline to return Networking Scavenger Hunt Sheets</p>
+                                <p>3:45pm – Networking Scavenger Hunt winner announced</p>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B106</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lounge - Two Sigma</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>At Two Sigma we find connections in all the world’s data. These insights guide
+investment strategies that support retirements, fund research, advance education and benefit philanthropic initiatives. So, if harnessing the power of math, data and technology to help people is something that excites you, let’s connect.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Welcoming Remarks</h3>
+                           </div>
+                            <div class="content-box">
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 9:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Keynote 1 - Laura Butler, Microsoft</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Laura Butler is a Director of Engineering, Windows Fundamentals in Microsoft. She is Microsoft's first female Technical Fellow and excels with complicated logistics and making the trains run on time.Read more about her in the programming section below!</p>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:30 - 10:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panels 1 -->
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel A1 - Changing the Paradigm: Female Investors + Female Entrepreneurs</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Only 20% of angel-backed firms and 13% of venture-capital-backed firms are women-led. What can we do to close the gender gap and empower both female entrepreneurs and female VCs?</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel B1 - Fashion x Technology: Design, Ecommerce, Wearables Part 1</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Technology has permeated the fashion world: we've seen the rise of the Instagram model and integration of wearables into our closets. Data analytics advances have transformed the ecommerce space as retailers strive to give customers a personalized experience, while clean design can add value to a company. this panel brings together some of the most innovative startups today in the Fashion Tech space.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin G125</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel B1 - Fashion x Technology: Design, Ecommerce, Wearables Part 2</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Technology has permeated the fashion world: we've seen the rise of the Instagram model and integration of wearables into our closets. Data analytics advances have transformed the ecommerce space as retailers strive to give customers a personalized experience, while clean design can add value to a company. this panel brings together some of the most innovative startups today in the Fashion Tech space.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin G115</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel C1 - Technology for a Safer World</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Technology has become a pivotal tool for entrepreneurs and innovators to implement new solutions to make the world a safer place, such as the use of technical intelligence to detect crimes or transform emergency assistance. This panel focuses on emerging companies that have provided new solutions and products to tack various safety issues.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest B108</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel D1 - Technology for Social Good</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Digital Technology has unlocked human potential to innovate and bring out a sheer breadth of creative and socially impactful projects to contribute to the social good. This panel brings together the leading players in the technology and social change sectors to discuss about entrepreneurial solutions and future opportunities to create scalable social impact.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest B101</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel E1 - Product Management: Building Great Products</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>What is product management? Explore what it takes to build value-added products to satisfy unmet needs. Explore the process of going from ideas to building physical products, from getting customer feedback to modifying prototypes, and much more.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest B103</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Panels 1 -->
+
+                        <!-- Workshops 1 -->
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop A1 - Acing Your Interview Workshop (Square)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Learn how to the interview with Square!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworking 323</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop B1 - Data Analytics Consulting</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>APT is one of the many companies that have been harnessing the power of big data to give recommendations to companies on profit impact of pricing, marketing, merchandising, operations, and capital initiatives. This workshop focuses on how APT utizies data analytics to formulate business strategies recommendations.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 119</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop C1 - Beaker Open Source Notebook</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>In this workshop, you’ll get to look at music through the eyes of a data scientist! We’ll be using Beaker, an open-source tool developed by engineers at Two Sigma, to perform exploratory data analysis of Columbia’s Million Song Dataset (<a href = "http://labrosa.ee.columbia.edu/millionsong/" target= "_blank">http://labrosa.ee.columbia.edu/millionsong/</a>). Installing Beaker prior to the workshop is highly encouraged (<a href = "http://beakernotebook.com/getting-started" target = "_blank">http://beakernotebook.com/getting-started</a>). This hand-on workshop will be interactive and involve some coding, but all experience levels are welcome!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworking 123</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop D1 - Machine Learning (Google)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Machine learning is the science of getting computers to act without being explicitly programmed. It has been the foundational principles behind inventions self-driving cars, speech recognition, effective web search, and more. Get a glimpse of how machine learning works at this workshop.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworking 221</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop E1 - Lean In</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Lean In is a nonprofit organization and online community dedicated to helping all women achieve their ambitions. Learn how you can start and form a lean in group at your campus.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">10:30 - 11:30 am</a>
+                                        <a href="#" class="theme-btn">Northwest B104</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Workshops 1 -->
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Two Sigma Lounge: Blinky Lab Class</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Register for a Two Sigma Blinky Lab Class! This introductory class will teach you to make fun, easy personalized lighting with a microcontroller and LEDs. We will be hosting classes at the following times: 11:00AM-12:00PM ; 2:00PM-3:00PM ; 3:00PM-4:00PM. Coffee and Cookies will be provided throughout the day via Oakleaf Bakeshop.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:30 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Buffer Time</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Take a break!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">11:30 - 11:45 am</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:45 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Keynote 2 - Pooja Sankar, CEO of Piazza</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Pooja Sankar is the founder and CEO of Piazza, a company democratizing the way STEM students learn and find jobs. Each year Piazza supports more than a million student enrollments from 1200 universities in 70 countries. Read more about her in the programming section below!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">11:45 - 12:45 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">12:45 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Mentorship Lunch</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Eat and talk with representatives from various companies!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">12:45 - 2:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Two Sigma Lounge: Blinky Lab Class</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Register for a Two Sigma Blinky Lab Class! This introductory class will teach you to make fun, easy personalized lighting with a microcontroller and LEDs. We will be hosting classes at the following times: 11:00AM-12:00PM ; 2:00PM-3:00PM ; 3:00PM-4:00PM. Coffee and Cookies will be provided throughout the day via Oakleaf Bakeshop.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">2:00 - 3:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lightnight Talks -->
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 1 - Azure Antoinette</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">2:00 - 2:20 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:20 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 2 - Jianran Li (Jenny) (Goldman Sachs)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">2:20 - 2:40 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:40 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 3 - Ellen Zhong (DE Shaw Research)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">2:40 - 3:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Lightning Talks -->
+
+                        <!-- Panels 2 -->
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel A2 - Finnovate: Cutting-Edge Innovation in Financial & Banking Technology</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>From streamlined payment methods to new tools for asset management to increased quantitative finance capabilities, FinTech is one of the hottest sectors in 2016. The Financial Industry is rapidly changing by introducing new innovative technologies and upgrading existing architectures. This panel features some of the leaders who are ushering in new era of financial innovation.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel B2 - Disruptive Innovations: Opportunities and Challenges</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Technological advancements enable innovations that have defined and shape the course of traditional technology. In essence, some companies have redefined then norm businesses and customers interact, create ripples and revolutionize various industries, from hospitality to transportation to finance. This panel features some of the disruptive companies whose products have transformed their respective industries tremendously.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B108</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel C2 - The Internet of Things: Connecting Devices to Your Life Panel</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>The Internet has allowed humanity to connect to each other in ways previously thought impossible. This panel will discuss how these new connections are being used to make people's lives more efficient and informed.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B103</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel D2 - Applications of Technical Knowledge in the Real World</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Explore how the knowledge of certain programming languages and technologies can be used in a professional or academic settings.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B101</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Panels 2 -->
+
+                        <!-- Workshops 2 -->
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop A2 - Crash Course in Design Thinking (Capital One)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 221</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop B2 - Crush Your Coding Interview</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Learn how to ace your technical interview with Facebook.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B104</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop C2 - Analyzing Taylor Swift Lyrics with Python</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworking 119</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop D2 - Intro to Music Visualization</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 123</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop E2 - Design Thinking (Two Sigma)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Come explore approaches that can help with good product design. In this workshop you will gain an understanding of what design thinking is, learn about some principles and practices for design thinking, and get a taste of some design thinking activities.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin G125</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop F2 - Business Bootcam for Technical Startup Founders (2 hrs long)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 323</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Workshops 2 -->
+
+                        <div class="hour-box">
+                            <div class="hour">3:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Two Sigma Lounge: Blinky Lab Class</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Register for a Two Sigma Blinky Lab Class! This introductory class will teach you to make fun, easy personalized lighting with a microcontroller and LEDs. We will be hosting classes at the following times: 11:00AM-12:00PM ; 2:00PM-3:00PM ; 3:00PM-4:00PM. Coffee and Cookies will be provided throughout the day via Oakleaf Bakeshop.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">3:00 - 4:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fireside Chats -->
+                        <div class="hour-box">
+                            <div class="hour">4:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Fireside Chat 1 - Goldman Sachs</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">4:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B108</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">4:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Fireside Chat 2 - Capital One</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Own it!: How to Continue Learning and Growing Beyond College.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">4:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference (half)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">4:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Fireside Chat 3 - Asana</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Kicking off your career: know your strengths, figure out what you want, and go get it.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">4:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B101</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">4:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Fireside Chat 4 - Microsoft</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Managing your Manager.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">4:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B103</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">4:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Fireside Chat 5 - AirBnB</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Ownership and Impact: How to make the most of your internship and convert to full time with ease.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">4:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference (half)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Fireside Chats -->
+
+                        <div class="hour-box">
+                            <div class="hour">5:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Keynote 3 - Cathryn Posey, US Digital Services</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Cathryn Posey heads up strategic partnerships and alliances for the United States Digital Service at the White House and is also the Founder of Tech By Superwomen. Read more about her in the programming section below!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">5:00 - 6:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">6:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Closing Remarks</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Hope to see you tomorrow and at the mixer!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">6:00 - 6:15 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Capital One Mixer</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Relax after an exciting first day and enjoy food, music, and good company at Harvard's only on-campus pub!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 10:00 pm</a>
+                                        <a href="#" class="theme-btn">Cambridge Queen's Head</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Saturday -->
+
+                    <!-- Sunday -->
+                    <div class="tab" id="sunday">
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Registration</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Please have your ticket ready!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 11:00 am</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Breakfast</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Enjoy some yummy food from Panera Bread!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 10:00 am</a>
+                                        <a href="#" class="theme-btn">Northwest Lobby & Cafe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Speaker Lounge</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Speakers and panelists' hangout space.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B110</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">8:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Board Lounge</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>WECode Board's hangout space.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">8:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B107</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lounge - Capital One</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Capital One Lounge will include:</p>
+                                <ul>
+                                    <li>Coffee / Hot Tea bar in the morning</li>
+                                    <li>Popcorn and Cotton Candy bar in the afternoon</li>
+                                    <li>We will have ‘jumbo’ games like: chess, checkers, connect 4 etc.</li>
+                                    <li>We will have digital demos of our products (both iOS and Android) throughout the day. There will be iphone, ipads, android devices setup for students to tinker with</li>
+                                    <li>We will have a tassel keychain maker activity. This only takes about 15 minutes. This should be a ton of fun too!</li>
+                                </ul>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B106</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Coat Check</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>You can check in and check out your coat anytime.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B106</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">9:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lounge - Microsoft</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>We will have a wall of affirmations, xbox Kinect game area (inclusive of Kinect adventures, and dance central 1-3 pm) and from 1-2pm: painting and coloring.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+                                        <a href="#" class="theme-btn">9:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Sunday Yoga with Asana</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Rejuvenate and get ready for another day of education and inspiration with fellow WECoders at this morning yoga session!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">10:00 - 11:00 am</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">10:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Innovation Challenge Pitches</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">10:00 - 11:00 am</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin G115</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Innovation Fair</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 119</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Workshops 4 -->
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop A4 - Machine Learning (Microsoft)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Machine learning is the science of getting computers to act without being explicitly programmed. It has been the foundational principles behind inventions self-driving cars, speech recognition, effective web search, and more. Get a glimpse of how machine learning works at this workshop.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B104</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop B4 and Workshop C4 (Description below)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Workshop B4 - From Local to the World - a Beginner's Guide to Internationalization/Workshop C4 - Do I Need a Database and If Yes, Which One?</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B105</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop D4 - Introduction to 3D Printing Workshop</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>"The next industrial revolution is all about personal fabrication, and it’s happening now. 3D printing is poised to unlock the potential in every person to create, innovate and fabricate. It’s already transforming manufacturing; soon it will change the world" - Stratesy Education</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 125</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop E4 - Robotics</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Introduction to foundations of modeling, design, planning, and control of robot systems.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B108</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop F4 - Data Visualization</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>"Data visualization is the presentation of data in a pictorial or graphical format. It enables decision makers to see analytics presented visually, so they can grasp difficult concepts or identify new patterns" - SAS Institute</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 221</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop G4 - Natural Language Processing 101</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Natural Language Processing helps computers understand human speech and language. Learn the fundamentals of how this magic works!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 323</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Workshop H4 - Game Design</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B105</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Workshops 4 -->
+
+                        <!-- Panels 3 -->
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel A3 - Applications of CS in Other Fields (Life Sciences, Finance, Business)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Cross disciplinary knowledge enables new understanding of complex problems. Explore how and why multidisciplinary has enabled people to redefinethe problems outside of the normal boundaries to reach high-level solutions.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 115</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel B3 - My Zero to One Journey Part 1</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>This panel features stories of female founders who built their products and companies from scratch. Come and hear how these incredible women transformed their ideas into reality and scaled their startups into impactful businesses.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Maxwell Dworkin 119</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">11:00 am</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Panel B3 - My Zero to One Journey Part 2</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>This panel features stories of female founders who built their products and companies from scratch. Come and hear how these incredible women transformed their ideas into reality and scaled their startups into impactful businesses.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">11:00 - 12:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B103</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Panels 3 -->
+
+                        <div class="hour-box">
+                            <div class="hour">12:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Keynote 4 - Tracy Chou, Software Engineer @ Pinterest</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Tracy Chou is a software engineer at Pinterest, most recently on the home feed and recommendations team. She has previously been a tech lead on the ads and web teams at Pinterest, and worked on infrastructure, API, email, and growth as well. Read more about her in the programming section below!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">12:00 - 1:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">1:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lunch</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Enjoy lunch while listening to Lightning Talks!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">1:00 - 2:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">1:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Microsoft Lounge: Dance Central</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Come dance at the Microsoft Lounge!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">1:00 - 3:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lightning Talks -->
+                        <div class="hour-box">
+                            <div class="hour">1:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 1 - Julie Elberfeld (Capital One)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">1:00 - 1:15 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">1:15 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 2 - Vika Abrecht</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">1:15 - 1:30 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">1:30 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 3 - Margo Seltzer</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">1:30 - 1:45 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">1:45 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Lightning Talk 4 - Marie Chatfield (Square)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p><b>How to Even Web?</b> You've got clients and servers and static assets and databases and the ominous-sounding "cloud" and you're interacting with APIs and you think you might be a full stack developer... but what does all of that even mean? And how does everything fit together? If you've ever secretly wondered whether you actually understand the way web development works, gain confidence with this simple mental model. Audience participation politely requested!</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">1:45 - 2:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Lightning Talks -->
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Closing Remarks & Innovation Challenge Ceremony</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 2:15 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>TED Talk & Chill</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 2:30 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B101</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>TED Talk & Chill</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 2:30 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B103</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Chill :)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 2:30 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B108</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Microsoft Lounge: Painting Corner</h3>
+                           </div>
+                            <div class="content-box">
+                                <p></p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 3:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B109</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mock Interviews -->
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Mock Interviews, Room 1 (Technical)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Come get practice for the Technical Interview.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B104</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Mock Interviews, Room 2 (Technical)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Come get practice for the Technical Interview.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B105</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hour-box">
+                            <div class="hour">2:00 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Mock Interviews, Room 3 (Behavioral, General)</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Come get practice for the Behavioral and General Interviews.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:00 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest B110</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Mock Interviews -->
+
+                        <div class="hour-box">
+                            <div class="hour">2:30 pm</div>
+                            <div class="img-circle circle"><span></span></div>
+                            <div class="toggle-btn">
+                               <h3>Opportunities Fair</h3>
+                           </div>
+                            <div class="content-box">
+                                <p>Come get practice for the Technical Interview.</p>
+                                <br>
+                                <div class="row professional clearfix">
+                                    <div class="col-md-12 col-xs-12">
+
+                                        <a href="#" class="theme-btn">2:30 - 5:00 pm</a>
+                                        <a href="#" class="theme-btn">Northwest Conference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Sunday -->
+
+                </div>
+                <!--Tabs Box End-->
+            </div>
+        </div>
+    </div>
